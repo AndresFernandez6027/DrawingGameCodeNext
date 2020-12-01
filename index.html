@@ -1,0 +1,48 @@
+<head>
+  <title> Code Next Canvas </title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>
+    This is my Drawing Game
+  </h1>
+  <p>
+    <canvas id="my-canvas"></canvas>
+  </p>
+  <p>
+    <button id="clear">erase board</button>
+  </p>
+  <hr />
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCahOVaP_eQpIRJwhRZvTy8fdbrazCeLX0",
+    authDomain: "drawinggame2.firebaseapp.com",
+    databaseURL: "https://drawinggame2.firebaseio.com",
+    projectId: "drawinggame2",
+    storageBucket: "drawinggame2.appspot.com",
+    messagingSenderId: "590611308332",
+    appId: "1:590611308332:web:34b3de13df6633fb521689",
+    measurementId: "G-88FJ7YDH5N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  <script src="canvas.js"></script>
+  <script src="main.js"></script>
+</body>
